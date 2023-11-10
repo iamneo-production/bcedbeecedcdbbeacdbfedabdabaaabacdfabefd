@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: Runner.RunTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 4, Time elapsed: 5.7 s <<< FAILURE! - in Runner.RunTest
-Given I am on the World Art Community website to check Watches(Scenario: Search for Watches)  Time elapsed: 0.006 s  <<< ERROR!
-java.lang.IllegalArgumentException: Driver must be set
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 9.212 s <<< FAILURE! - in Runner.RunTest
+When I hover over the search icon and input "Watches" and press Enter(Scenario: Search for Watches)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException
 
-Scenario: Search for Watches  Time elapsed: 0.008 s  <<< ERROR!
-java.lang.IllegalArgumentException: Driver must be set
+Scenario: Search for Watches  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException
 

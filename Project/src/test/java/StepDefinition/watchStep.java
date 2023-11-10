@@ -37,11 +37,10 @@ public class watchStep{
                 
         @Given("^I am on the World Art Community website to check Watches$")
         public void i_am_on_the_World_Art_Community_website_to_check_Watches() throws Throwable{
-        driver = base.openBrowser();
-                    driver.manage().window().maximize();
-                    url = new Url(driver);
-                    testcase1 = new Watch(driver);
-                    url.LaunchSite(driver);
+            driver = base.openBrowser();
+            driver.manage().window().maximize();
+            url = new Url(driver);
+            url.LaunchSite(driver);
         }
 
 

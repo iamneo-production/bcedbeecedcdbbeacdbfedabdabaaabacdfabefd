@@ -128,7 +128,7 @@ public class WebDriverHelper{
             e.printStackTrace();
         }
     }
-    public static void hoverAndClickElement(WebDriver driver, By elementToHover, By elementToClick) {
+    public void hoverAndClickElement(WebDriver driver, By elementToHover, By elementToClick) {
         try {
             Actions actions = new Actions(driver);
 

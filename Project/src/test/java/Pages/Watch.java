@@ -32,7 +32,6 @@ public class Watch {
     private WebDriverHelper driverHelper;
     private watchUI watchUI;
     private ExtentReports reporter = Reporter.generateExtentReport();
-    // Reporter reporter = new Reporter();
     LoggerHandler log = new LoggerHandler();
     Actions actions = new Actions(driver);
    
@@ -47,7 +46,9 @@ public class Watch {
    
     public void searchIcon() throws Throwable {
         try {
-            driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());                       
+            System.out.println("helo");
+            driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());       
+                            
         } catch (Exception e) {
             log.logError("Exception occurred while performing Homepage");
             e.printStackTrace();
