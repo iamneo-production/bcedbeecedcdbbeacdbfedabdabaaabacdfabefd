@@ -48,9 +48,20 @@ public class Watch {
     public void searchIcon() throws Throwable {
         try {
             System.out.println("helo");
-            try {
-                driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());
-            }     
+            // driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());
+
+            WebElement searchIconElement = driver.findElement(watchUI.searchIcon());
+            WebElement searchBarElement = driver.findElement( watchUI.searchBar());
+
+            if (searchIconElement != null && searchBarElement != null) {
+                actions.moveToElement(searchIconElement)
+                       .click(searchBarElement)
+                       .perform();
+            } else {
+                // Handle the case where one or both elements are not found
+                System.out.println("Search icon or search bar not found");
+            }
+                 
                             
         } catch (Exception e){
             log.logError("Exception occurred while performing Homepage");

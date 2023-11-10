@@ -131,7 +131,7 @@ public class WebDriverHelper{
     public void hoverAndClickElement(WebDriver driver, By elementToHover, By elementToClick) {
         try {
             Actions actions = new Actions(driver);
-
+            
             WebElement hoverElement = driver.findElement(elementToHover);
             WebElement clickElement = driver.findElement(elementToClick);
 
