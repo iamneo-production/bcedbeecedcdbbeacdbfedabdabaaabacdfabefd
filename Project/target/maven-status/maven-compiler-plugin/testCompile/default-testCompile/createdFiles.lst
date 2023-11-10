@@ -2,10 +2,7 @@ Utils/ReadPropertyFile.class
 Utils/ExcelReader.class
 Utils/Screenshot.class
 Utils/WebDriverHelper.class
-UiStore/ReviewUI.class
-UiStore/watch.class
+UiStore/watchUI.class
 Runner/RunTest.class
 Utils/Base.class
-Utils/LoggerHandler.class
 Pages/Url.class
-Pages/Comment.class

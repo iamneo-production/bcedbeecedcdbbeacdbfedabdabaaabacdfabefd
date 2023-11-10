@@ -9,6 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+
 import java.time.Duration;
 import java.util.Set;
 
@@ -127,17 +129,5 @@ public class WebDriverHelper{
         }
     }
 
-    public static void hoverAndClickElement(WebDriver driver, By elementToHover, By elementToClick) {
-        try {
-            Actions actions = new Actions(driver);
-            WebElement hoverElement = wait.until(ExpectedConditions.visibilityOfElementLocated(elementToHover));
-            WebElement clickElement = wait.until(ExpectedConditions.visibilityOfElementLocated(elementToClick));
-
-            actions.moveToElement(hoverElement).click(clickElement).perform();
-        } catch (Exception e) {
-            e.printStackTrace();
-            // Handle or rethrow the exception here as needed.
-        }
-    }
 }
 

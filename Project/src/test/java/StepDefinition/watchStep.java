@@ -45,9 +45,7 @@ public void i_am_on_the_World_Art_Community_website_to_check_Watches() throws Th
             url.LaunchSite(driver);
 }
 
- {
-   testcase1.PopupLocator();
-}
+
 
 @When("^I select the IN option and choose a date that is at least (\\d+) days ahead$")
 public void i_select_the_IN_option_and_choose_a_date_that_is_at_least_days_ahead(int arg1) throws Throwable {
