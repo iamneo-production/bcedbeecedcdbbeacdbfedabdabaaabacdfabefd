@@ -1,0 +1,8 @@
+[INFO] 2023-10-18 13:59:00,692 Utils.LoggerHandler logInfo - Hello
+[INFO] 2023-10-18 13:59:03,209 Utils.LoggerHandler logInfo - Dates Clicked
+[INFO] 2023-10-18 13:59:09,145 Utils.LoggerHandler openBrowser - Browser Launched
+[INFO] 2023-10-18 13:59:10,986 Utils.LoggerHandler openBrowser - Browser Loaded the URL
+[INFO] 2023-10-18 13:59:13,714 Utils.LoggerHandler logInfo - Hello
+[INFO] 2023-10-18 13:59:20,764 Utils.LoggerHandler openBrowser - Browser Launched
+[INFO] 2023-10-18 13:59:22,525 Utils.LoggerHandler openBrowser - Browser Loaded the URL
+[INFO] 2023-10-18 13:59:25,110 Utils.LoggerHandler logInfo - Hello
