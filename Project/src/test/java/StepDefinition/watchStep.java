@@ -22,7 +22,7 @@ public class watchStep{
    // ExtentReports extent = new ExtentReports();
    private ExtentReports reporter;
     private Url url;
-    private watchUI testcase1;
+    private Watch testcase1;
     private WebDriver driver;
     ChromeOptions options = new ChromeOptions();
     Base base = new Base();
@@ -41,7 +41,7 @@ public void i_am_on_the_World_Art_Community_website_to_check_Watches() throws Th
   driver = base.openBrowser();
             driver.manage().window().maximize();
             url = new Url(driver);
-            testcase1 = new Bookhotel(driver);
+            testcase1 = new Watch(driver);
             url.LaunchSite(driver);
 }
 
@@ -49,7 +49,7 @@ public void i_am_on_the_World_Art_Community_website_to_check_Watches() throws Th
 
 @When("^I select the IN option and choose a date that is at least (\\d+) days ahead$")
 public void i_select_the_IN_option_and_choose_a_date_that_is_at_least_days_ahead(int arg1) throws Throwable {
-    // testcase1.dates();
+    testcase1.searchIcon();
 }
 
 @When("^I click the Book Now button$")
@@ -64,7 +64,6 @@ public void i_click_on_See_Details_for_the_first_hotel() throws Throwable {
 
 @Then("^I should see the label standard Standard Rate$")
 public void i_should_see_the_label_standard_Standard_Rate() throws Throwable {
-//    testcase1.verify_details();
 }
 
     @After

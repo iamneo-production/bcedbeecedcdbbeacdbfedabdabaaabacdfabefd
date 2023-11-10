@@ -1,8 +1,13 @@
+StepDefinition/watchStep.class
 Utils/ReadPropertyFile.class
 Utils/ExcelReader.class
 Utils/Screenshot.class
 Utils/WebDriverHelper.class
+Pages/Watch.class
 UiStore/watchUI.class
 Runner/RunTest.class
-Utils/Base.class
 Pages/Url.class
+Utils/EventHandler.class
+Utils/Base.class
+Utils/LoggerHandler.class
+Utils/Reporter.class
