@@ -48,7 +48,11 @@ public class Watch {
     public void searchIcon() throws Throwable {
         try {
             System.out.println("helo");
-            driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());       
+            try {
+                actions.moveToElement(driverHelper.hoverOverElement( watchUI.searchIcon()))
+                       .click(driverHelper.clickOnElement( watchUI.searchBar()))
+                       .perform();
+            }     
                             
         } catch (Exception e){
             log.logError("Exception occurred while performing Homepage");
