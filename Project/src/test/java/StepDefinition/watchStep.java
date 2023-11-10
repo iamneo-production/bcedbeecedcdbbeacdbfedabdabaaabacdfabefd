@@ -39,14 +39,17 @@ public class watchStep{
         public void i_am_on_the_World_Art_Community_website_to_check_Watches() throws Throwable{
             driver = base.openBrowser();
             driver.manage().window().maximize();
+            testcase1 = new Watch(driver);
             url = new Url(driver);
             url.LaunchSite(driver);
+            System.out.println("url executed");
         }
 
 
 
         @When("^I hover over the search icon and input \"([^\"]*)\" and press Enter$")
         public void i_hover_over_the_search_icon_and_input_and_press_Enter(String arg1) throws Throwable {
+            System.out.println("testcase1");
             testcase1.searchIcon();
         }
 
@@ -70,7 +73,6 @@ public class watchStep{
         if(driver != null) {
             driver.quit();
         }
-        // Flush the ExtentReports instance to save the report
     if (reporter != null) {
         reporter.flush();
     }

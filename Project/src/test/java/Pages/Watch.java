@@ -33,13 +33,14 @@ public class Watch {
     private watchUI watchUI;
     private ExtentReports reporter = Reporter.generateExtentReport();
     LoggerHandler log = new LoggerHandler();
-    Actions actions = new Actions(driver);
+    Actions actions;
    
 
     public Watch(WebDriver driver) {
         System.out.println(" drive instance one being created");
         this.driver = driver;
-       driverHelper = new WebDriverHelper(driver);
+        driverHelper = new WebDriverHelper(driver);
+        actions = new Actions(driver);
     }
     
     private ExtentTest test = reporter.createTest("Homepage", "PURIHOLIDAY");
@@ -49,7 +50,7 @@ public class Watch {
             System.out.println("helo");
             driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());       
                             
-        } catch (Exception e) {
+        } catch (Exception e){
             log.logError("Exception occurred while performing Homepage");
             e.printStackTrace();
             String base64Screenshot = Reporter.captureScreenshotAsBase64(driver, "Homepage Error");
