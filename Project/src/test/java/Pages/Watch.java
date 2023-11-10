@@ -49,9 +49,7 @@ public class Watch {
         try {
             System.out.println("helo");
             try {
-                actions.moveToElement(driverHelper.hoverOverElement( watchUI.searchIcon()))
-                       .click(driverHelper.clickOnElement( watchUI.searchBar()))
-                       .perform();
+                driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());
             }     
                             
         } catch (Exception e){
