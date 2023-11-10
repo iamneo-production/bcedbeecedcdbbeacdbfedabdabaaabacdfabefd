@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: Runner.RunTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 2, Skipped: 5, Time elapsed: 6.018 s <<< FAILURE! - in Runner.RunTest
-Given I am on the World Art Community website to check Watches(Scenario: Search for Watches)  Time elapsed: 0.013 s  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 4, Time elapsed: 5.7 s <<< FAILURE! - in Runner.RunTest
+Given I am on the World Art Community website to check Watches(Scenario: Search for Watches)  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.IllegalArgumentException: Driver must be set
 
-Scenario: Search for Watches  Time elapsed: 0.019 s  <<< ERROR!
+Scenario: Search for Watches  Time elapsed: 0.008 s  <<< ERROR!
 java.lang.IllegalArgumentException: Driver must be set
 

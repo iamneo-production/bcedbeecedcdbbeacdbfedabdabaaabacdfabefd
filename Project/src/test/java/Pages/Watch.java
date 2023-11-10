@@ -47,19 +47,7 @@ public class Watch {
    
     public void searchIcon() throws Throwable {
         try {
-            String xpath1 = "//*[@id=\"ownmenu\"]/li[12]";
-            String xpath2 = "//input[@id='searchFieldVal']";
-            
-            WebElement element1 = driver.findElement(By.xpath(xpath1));
-            Actions actions = new Actions(driver);
-            actions.moveToElement(element1).perform();
-            element1.click();
-            
-            WebElement element2 = driver.findElement(By.xpath(xpath2));
-            actions.moveToElement(element2).perform();
-            element2.click();
-            
-                        
+            driverHelper.hoverAndClickElement(driver, watchUI.searchIcon(), watchUI.searchBar());                       
         } catch (Exception e) {
             log.logError("Exception occurred while performing Homepage");
             e.printStackTrace();

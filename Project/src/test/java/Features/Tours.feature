@@ -6,7 +6,6 @@ Feature: World Art Community Website Testing
     Then I store the title of the first watch result
     And I click on "VIEW DETAILS"
     Then I verify the selected product title matches the displayed product title
-    And I capture a screenshot
 
   # Scenario: Navigate to Birdhouses
   #   Given I am on the World Art Community website
