@@ -1,3 +1,4 @@
-[INFO] 2023-11-10 08:12:00,712 Utils.LoggerHandler openBrowser - Browser Launched
-[INFO] 2023-11-10 08:12:02,119 Utils.LoggerHandler openBrowser - Browser Loaded the URL
-[ERROR] 2023-11-10 08:12:05,970 Utils.LoggerHandler logError - Exception occurred while performing Homepage
+[INFO] 2023-11-15 12:08:17,367 Utils.LoggerHandler openBrowser - Browser Launched
+[INFO] 2023-11-15 12:08:18,757 Utils.LoggerHandler openBrowser - Browser Loaded the URL
+[ERROR] 2023-11-15 12:08:23,112 Utils.LoggerHandler logError - Exception occurred while performing Homepage
+[INFO] 2023-11-15 12:08:34,860 Utils.LoggerHandler openBrowser - Browser Launched
